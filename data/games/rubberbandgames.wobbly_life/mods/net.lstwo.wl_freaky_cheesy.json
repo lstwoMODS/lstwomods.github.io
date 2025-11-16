@@ -1,0 +1,11 @@
+{
+    "name": "Freaky Cheesy Mod",
+    "description": "Horror mod inspired by slenderman. Collect 40 images before freaky cheesy catches you.",
+    "author": "lstwo and freakycheesy",
+    "repo": {
+        "owner": "lstwo",
+        "name": "WLFreakyCheesyMod"
+    },
+    "process_file": "ExtractToGameRoot",
+    "dependencies": []
+}

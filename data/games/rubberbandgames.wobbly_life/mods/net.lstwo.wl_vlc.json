@@ -1,0 +1,11 @@
+{
+    "name": "WL VLC",
+    "description": "Changes the cinema screen to a VLC media player.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwo",
+        "name": "WobblyLife-VLC"
+    },
+    "process_file": "ExtractToGameRoot",
+    "dependencies": []
+}

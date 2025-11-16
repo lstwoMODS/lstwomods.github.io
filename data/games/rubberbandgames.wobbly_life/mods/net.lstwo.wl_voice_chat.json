@@ -1,6 +1,6 @@
 {
     "name": "WL Voice Chat",
-    "description": "Adds proximity chat to the game. (should probably update the networking for this mod)",
+    "description": "Adds proximity chat to the game. Kinda buggy.",
     "author": "lstwo",
     "repo": {
         "owner": "lstwo",

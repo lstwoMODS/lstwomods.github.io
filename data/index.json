@@ -10,10 +10,13 @@
             "net.lstwo.lstwomods_core"
         ],
         "rubberbandgames.wobbly_life": [
-            "net.lstwo.lstwomods_wobblylife_extras",
             "net.lstwo.lstwomods_wobblylife",
             "net.lstwo.shadowlib",
-            "net.lstwo.wl_voice_chat"
+            "net.lstwo.wl_voice_chat",
+            "net.lstwo.lstwomods_wobblylife_extras",
+            "net.lstwo.wl_vlc",
+            "net.lstwo.wl_freaky_cheesy",
+            "net.lstwo.wl_christmas"
         ],
         "take_a_nuke.mayonnaise_simulator": [
             "net.lstwo.lstwomods_mayosim"

@@ -18,7 +18,7 @@ $.get('/mods/components/mod_download_item.html', function(template) {
 
 function replaceAndInsertHtml(html, el, replacements) {
     Object.keys(replacements).forEach(replacementKey => {
-        html = html.replace(`{{${replacementKey}}}`, replacements[replacementKey]);
+        html = html.replaceAll(`{{${replacementKey}}}`, replacements[replacementKey]);
     });
 
     const inserted = $(html);

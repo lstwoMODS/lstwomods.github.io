@@ -1,0 +1,11 @@
+{
+    "name": "WL Christmas",
+    "description": "Adds back the snow and ambience of the christmas update.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwo",
+        "name": "WobblyLife-XMAS"
+    },
+    "process_file": "MoveToPlugins",
+    "dependencies": []
+}
