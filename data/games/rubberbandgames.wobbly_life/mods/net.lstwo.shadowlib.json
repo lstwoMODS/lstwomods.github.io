@@ -1,0 +1,15 @@
+{
+    "name": "ShadowLib",
+    "description": "Obsolete library for Wobbly Life mods. Included for legacy purposes. Don't download unless it's a dependency.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwo",
+        "name": "shadowlib"
+    },
+    "process_file": "MoveToPlugins",
+    "dependencies": [
+        {
+            "id": "com.originalnicodr.cinematic_unity_explorer"
+        }
+    ]
+}

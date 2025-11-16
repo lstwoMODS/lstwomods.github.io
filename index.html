@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>lstwoMODS</title>
+    <base href="/"/>
+
+    <include data-include="/html/head.html"></include>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</head>
+<body>
+
+<include data-include="/html/header.html"></include>
+
+<main>
+    <div class="logo-bg">
+        <p style="margin-top: 45px"></p>
+        <h1 style="font-size: 50px;">lstwoMODS</h1>
+        <p><b>Free and Open Source mods</b> for games (mostly Wobbly Life) originally created to recreate Azzamods for free.</p>
+        <a class="download-mods-link-btn" href="/mods/">Download Mods</a>
+        <p style="margin-top: 30px; font-size: medium;">Have a question? <a href="#section-faq">Check the FAQ</a></p>
+    </div>
+
+    <div class="main-content" id="section-how-to-install">
+        <h1>How To Install</h1>
+        <ol>
+            <li>Go to the <a href="/mods/">Download Mods</a> page and add all the mods you want to install.</li> 
+            <li>Once you're done download the .zip file and extract it.</li>
+            <li>Open the game's folder and drag the .exe onto the 'DRAG GAME HERE.bat' file from the extracted modpack.</li>
+        </ol>
+        <p>Once the process is finished you can open the game again with the mods installed.</p>
+    </div>
+
+    <div class="main-content accent-bg" id="section-resources">
+        <h1>Resources and Links</h1>
+        <ul>
+            <li> <a href="https://discord.gg/kKjuKEaExb">Discord Server</a>: Get support, suggest features and chat with the (inactive) community.</li>
+            <li> <a href="https://github.com/lstwomods">GitHub Page</a>: Find other installation methods, get the source code and contribute to the projects by adding your own features or bug fixes.</li>
+            <li> <a href="https://github.com/lstwoMODS/lstwoMODS-Core">lstwoMODS Core GitHub</a>: Source code and info about lstwoMODS Core.</li>
+            <li> <a href="https://github.com/lstwoMODS/lstwoMODS-WobblyLife">lstwoMODS Wobbly Life GitHub</a>: Source code and info about lstwoMODS for Wobbly Life.</li>
+            <li> <a href="https://github.com/lstwoMODS/lstwoMODS-WobblyLife-Extras">lstwoMODS Wobbly Life Extras GitHub</a>: Source code and info about lstwoMODS Extras for Wobbly Life.</li>
+        </ul>
+        <div style="width: 100%; text-align: center;">
+            <a class="download-mods-link-btn" href="/mods/">Find and download even more mods that aren't listed here!</a>
+        </div>
+    </div>
+
+    <div class="main-content" id="section-faq">
+        <h1>FAQ</h1>
+
+        <h3>What mods can I get from this website?</h3>
+        <p>
+            You can download the official lstwoMODS alongside other mods I, or other people have made that have been added here.
+        </p>
+
+        <h3>Can I change the player limit from 4 in Wobbly Life using lstwoMODS?</h3>
+        <p>
+            No, get <a href="https://www.nexusmods.com/wobblylife/mods/8">Larger Lobbies</a> for that.
+        </p>
+    
+        <h3>Why did you get rid of the installer app?</h3>
+        <p>
+            It's easier for me to program UI for an installer in HTML than WPF and the installer was just kind of unnecessary bloat to be installing.
+            Also it's probably quicker to get the mods by downloading them from a website than having to install an app that gets blocked every 2 seconds.
+        </p>
+        <p>
+            The Wobbly Life installer arcade mod has been unlisted as it was broken for a lot of people and could have been made a lot better.
+        </p>
+
+        <h3>Can my save file be corrupted through these mods?</h3>
+        <p>
+            For lstwoMODS the save file should only be changed when doing things that the game saves to the save file like progressing a mission or giving yourself money. lstwoMODS itself won't change the save file by itself.
+        </p>
+        <p>
+            As for save file corruptions that has never been reported yet as lstwoMODS uses in game functions instead of changing the save file manually.
+        </p>
+        <p>
+            This information is for lstwoMODS though, other mods may do things differently so make sure to check their descriptions / READMEs for any warnings.
+        </p>
+
+        <h3>Can I get these on the PC XBOX version of this game?</h3>
+        <p>
+            You probably can as I heard some people having success with that, though this is not officially supported so you are on your own and mod support for this version may vary.
+        </p>
+
+        <h3>Can I install this on linux?</h3>
+        <p>
+            Yes, but you probably have to use manual installation. You can find these for lstwoMODS <a href="https://github.com/lstwomods">here</a>! 
+            Other mods will probably require you to place the dll files into the BepInEx/plugins folder or if they have .zip files that are already laid out just put them at the correct location in the games folder.
+            To make sure always check the mods' README.
+        </p>
+        <p>
+            Also note that games running under proton (like Wobbly Life) require you to use the Windows (probably x64) version of BepInEx.
+        </p>
+        <p>
+            Btw if you are on linux and would like to make this website's installer work on linux feel free to add .sh versions of my .bat scripts for installing.
+        </p>
+    </div>
+
+    <div id="section-reviews">
+        <h1>Reviews</h1>
+
+        <div class="reviews-root">
+            <div class="review glassmorphism">
+                <p>"lstwo hacked my pc and stole my credit card info"</p>
+                <div class="review-author">
+                    <img src="/imgs/reviews/cae.png" alt="cae">
+                    <p>Cae</p>
+                </div>
+            </div>
+
+            <div class="review glassmorphism">
+                <p>"lstwo mods are top!"</p>
+                <div class="review-author">
+                    <img src="/imgs/reviews/maze.png" alt="maze">
+                    <p>Maze</p>
+                </div>
+            </div>
+
+            <div class="review glassmorphism">
+                <p>"Very efficient and easy to use!"</p>
+                <div class="review-author">
+                    <img src="/imgs/reviews/blammo.webp" alt="blammo">
+                    <p>Blammo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <include data-include="/html/footer.html"></include>
+</main>
+
+</body>
+</html>

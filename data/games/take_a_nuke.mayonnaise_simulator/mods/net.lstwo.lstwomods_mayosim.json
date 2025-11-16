@@ -1,0 +1,15 @@
+{
+    "name": "lstwoMODS Mayo Sim",
+    "description": "lstwoMODS for Mayonnaise Simulator.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwoMODS",
+        "name": "lstwoMODS-MayoSim"
+    },
+    "process_file": "MoveToPlugins",
+    "dependencies": [
+        {
+            "id": "net.lstwo.lstwomods_core"
+        }
+    ]
+}

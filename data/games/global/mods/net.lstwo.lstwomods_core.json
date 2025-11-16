@@ -1,0 +1,20 @@
+{
+    "name": "lstwoMODS Core",
+    "description": "Core UI for lstwoMODS. Adds no mods on it own.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwoMODS",
+        "name": "lstwoMODS-core"
+    },
+    "process_file": "MoveToPlugins",
+    "tag_filters": {
+        "include": [
+            "<2.0.0"
+        ]
+    },
+    "dependencies": [
+        {
+            "id": "com.originalnicodr.cinematic_unity_explorer"
+        }
+    ]
+}

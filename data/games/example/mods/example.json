@@ -1,0 +1,87 @@
+// chatgpt generated example (im lazy)
+{
+    "name": "Some Cool Mod",
+    "description": "This is a description",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwo",
+        "name": "SomeModRepo"
+    },
+    "process_file": "MoveToPlugins",    // batch file to install it
+    // --------------------------------------------------------------------
+    // GLOBAL COMPATIBILITY + FILTERS FOR ALL RELEASES
+    // --------------------------------------------------------------------
+    "tag_filters": {
+        "include": [
+            ">=1.0.0"                   // require mod version tag ≥ 1.0.0
+        ], 
+        "exclude": [
+            "<1.0.0",                   // exclude old versions or a specific tag
+            "=2.5.3"
+        ] 
+    },
+    "file_filters": {
+        "must_include": [
+            ".dll",                     // file names must contain at least one of these
+            "plugin"
+        ], 
+        "must_exclude": [
+            "src",                      // reject files containing these substrings
+            "symbols"
+        ] 
+    },
+    // --------------------------------------------------------------------
+    // GLOBAL DEPENDENCIES (apply to ALL versions unless overridden below)
+    // Each dependency can have version range OR “any”
+    // --------------------------------------------------------------------
+    "dependencies": [
+        {
+            "id": "net.lstwo.shadowlib",
+            "version": ">=2.0.0"        // semantic range
+        },
+        {
+            "id": "net.lstwo.universelib",
+            "version": "any"
+        }
+    ],
+    // --------------------------------------------------------------------
+    // VERSION-SPECIFIC RULE OVERRIDES (ranges or single tags)
+    // These override OR extend the global rules.
+    // --------------------------------------------------------------------
+    "version_overrides": [
+        {
+            "range": "=2.0.0",          // applies only to tag "2.0.0"
+            "tag_filters": {
+                "exclude": [
+                    "beta"              // hide beta prereleases for this version
+                ] 
+            },
+            "file_filters": {
+                "must_include": [
+                    "mono"              // required files only for this version
+                ] 
+            },
+            "dependencies": [
+                {
+                    "id": "net.lstwo.shadowlib",
+                    "version": ">=2.1.0 <3.0.0" // override global dependency only for this tag
+                }
+            ],
+            "process_file": "ExtractToGameRoot"
+        },
+        {
+            "range": ">=3.0.0 <4.0.0",  // applies to a range of versions
+            "dependencies": [
+                {
+                    "id": "net.lstwo.newcore",
+                    "version": ">=1.0.0"
+                }
+            ],
+            "file_filters": {
+                "must_exclude": [
+                    "legacy"
+                ]
+            }
+        }
+    ]
+}

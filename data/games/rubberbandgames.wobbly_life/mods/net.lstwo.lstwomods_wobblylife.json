@@ -1,0 +1,18 @@
+{
+    "name": "lstwoMODS Wobbly Life",
+    "description": "lstwoMODS for Wobbly Life. Control basically anything.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwoMODS",
+        "name": "lstwoMODS-WobblyLife"
+    },
+    "process_file": "MoveToPluginsAndDeleteOldLstwoMods",
+    "dependencies": [
+        {
+            "id": "net.lstwo.shadowlib"
+        },
+        {
+            "id": "net.lstwo.lstwomods_core"
+        }
+    ]
+}

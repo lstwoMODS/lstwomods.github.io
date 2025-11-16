@@ -1,0 +1,15 @@
+{
+    "name": "Cinematic Unity Explorer (BIE5 Mono)",
+    "description": "An in-game UI for exploring, debugging and modifying Mono Unity games. The fork is focused on providing tools for creating marketing material for Unity games.",
+    "author": "originalnicodr",
+    "repo": {
+        "owner": "originalnicodr",
+        "name": "CinematicUnityExplorer"
+    },
+    "file_filters": {
+        "must_include": [
+            "CinematicUnityExplorer.BepInEx5.Mono"
+        ]
+    },
+    "process_file": "ExtractToBepInEx"
+}

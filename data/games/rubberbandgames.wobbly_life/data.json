@@ -1,0 +1,21 @@
+{
+    "game_name": "Wobbly Life",
+
+    "mod_loader": {
+        "process_file": "ExtractToGameRoot",
+        "repo": {
+            "owner": "bepinex",
+            "name": "bepinex"
+        },
+        "tag_filters": {
+            "include": [
+                "5.x"
+            ]
+        },
+        "file_filters": {
+            "must_include": [
+                "x64"
+            ]
+        }
+    }
+}

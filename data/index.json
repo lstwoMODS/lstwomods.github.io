@@ -1,0 +1,22 @@
+{
+    "global": "global",
+    "games": [
+        "rubberbandgames.wobbly_life", 
+        "take_a_nuke.mayonnaise_simulator"
+    ],
+    "mods": {
+        "global": [
+            "com.originalnicodr.cinematic_unity_explorer",
+            "net.lstwo.lstwomods_core"
+        ],
+        "rubberbandgames.wobbly_life": [
+            "net.lstwo.lstwomods_wobblylife_extras",
+            "net.lstwo.lstwomods_wobblylife",
+            "net.lstwo.shadowlib",
+            "net.lstwo.wl_voice_chat"
+        ],
+        "take_a_nuke.mayonnaise_simulator": [
+            "net.lstwo.lstwomods_mayosim"
+        ]
+    }
+}

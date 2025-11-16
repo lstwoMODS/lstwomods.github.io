@@ -1,0 +1,15 @@
+{
+    "name": "lstwoMODS Extras (Wobbly Life)",
+    "description": "Extra mods for lstwoMODS Wobbly Life that didn't fit into the main modpack (because they're stupid)",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwoMODS",
+        "name": "lstwoMODS-WobblyLife-Extras"
+    },
+    "process_file": "MoveToPlugins",
+    "dependencies": [
+        {
+            "id": "net.lstwo.lstwomods_wobblylife"
+        }
+    ]
+}

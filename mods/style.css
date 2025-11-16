@@ -1,0 +1,341 @@
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+.full-mods-ui-container {
+    max-width: 1500px;
+    width: calc(100% - 100px);
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    max-height: calc(100vh - 276px);
+    min-height: 0;
+}
+
+footer {
+    width: 100%;
+}
+
+#game-selector-container {
+    width: 100%;
+    height: 45px;
+    max-height: 45px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#game-selector-dropdown {
+    max-width: 400px;
+    width: 100%;
+    
+    border-radius: 15px;
+    font-family: Inter, sans-serif;
+    padding: 10px;
+    /*border: 2px solid var(--color-border);*/
+    background-color: var(--color-surface);
+    font-size: 14px;
+
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23ffffff"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    color: white;
+
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.25);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.005),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.005),
+        inset 0 0 20px 10px rgba(255, 255, 255, 0.05);
+    
+    cursor: pointer;
+    appearance: none;
+
+    transition: 
+        filter 300ms ease,
+        scale 200ms ease;
+}
+
+#game-selector-dropdown:hover {
+    filter: drop-shadow(0 0 7px #00000077);
+    scale: 1.025;
+}
+
+.main-mods-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+#mods-download-panel {
+    height: auto;
+    flex: 1 1 calc(30% - 20px);
+    min-width: 300px;
+}
+
+#mods-list {
+    height: auto;
+    flex: 1 1 calc(70% - 20px);
+    min-width: 300px;
+}
+
+.mods-ui-panel {
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+
+    border-radius: 15px;
+    /*border: 2px solid var(--color-border);*/
+
+    display: flex;
+    flex-direction: column;
+}
+
+.mods-download-list {
+    background-color: color-mix(in srgb, black 20%, transparent);
+    border-radius: 15px;
+    border: 2px solid var(--color-border);
+    max-height: calc(100vh - 520px);
+
+    margin: 0 15px;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+
+    list-style: none;
+    overflow: scroll;
+    flex: 1 1 auto;
+}
+
+.mods-download-list li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mods-download-list li button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    background-image: url("/imgs/icons/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg");
+    cursor: pointer;
+}
+
+.mods-download-list li button:hover {
+    background-image: url("/imgs/icons/close_24dp_E3E3E3_FILL0_wght400_GRAD200_opsz24.svg");
+}
+
+.download-button {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 45px;
+
+    background-color: color-mix(in srgb, var(--color-success) 70%, transparent);
+    border-radius: 15px;
+    /*border: 2px solid var(--color-success-light);*/
+
+    font-family: Inter, sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.25);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.01),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.01),
+        inset 0 0 20px 10px rgba(255, 255, 255, 0.1);
+
+    filter: drop-shadow(0 0 5px #00000077);
+
+    transition: 
+        background-color 100ms ease,
+        filter 200ms ease,
+        scale 100ms ease;
+}
+
+.download-button:hover {
+    background-color: color-mix(in oklab, var(--color-success), white 5%);
+    scale: 1.025;
+}
+
+.download-button:active {
+    background-color: color-mix(in oklab, var(--color-success), black 5%);
+}
+
+.mods-list {
+    background-color: color-mix(in srgb, black 20%, transparent);
+    border-radius: 15px;
+    border: 2px solid var(--color-border);
+    max-height: calc(100vh - 437px);
+
+    margin: 0 15px;
+    margin-bottom: 15px;
+    padding: 0;
+
+    list-style: none;
+    overflow: scroll;
+    flex: 1 1 auto;
+    gap: 0;
+}
+
+.mods-list h3 {
+    margin: 0;
+}
+
+.mods-list-item {
+    display: flex;
+    flex-direction: column;
+    background-color: color-mix(in oklab, var(--color-primary-dark) 100%, transparent);
+    /*border: 2px solid var(--color-primary);*/
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+.mods-list-item-top-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+}
+
+.mods-list-item-top-row a {
+    color: white;
+}
+
+.mod-version-select {
+    max-width: 200px;
+    width: 100%;
+    
+    border-radius: 15px;
+    font-family: Inter, sans-serif;
+    padding: 8px;
+    max-height: 40px;
+    /*border: 2px solid var(--color-border);*/
+    background-color: color-mix(in srgb, var(--color-surface) 70%, transparent);
+    font-size: 14px;
+
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="%23ffffff"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    color: white;
+
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.25);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.005),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.005),
+        inset 0 0 20px 10px rgba(255, 255, 255, 0.05);
+    
+    cursor: pointer;
+    appearance: none;
+
+    transition: 
+        filter 300ms ease,
+        scale 200ms ease;
+}
+
+.mod-version-select:hover {
+    filter: drop-shadow(0 0 7px #00000077);
+    scale: 1.025;
+}
+
+.mod-name-downloads-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.mod-name-downloads-header span {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.mod-name-downloads-header p {
+    margin: 0;
+    font-size: large;
+    width: 100%;
+}
+
+.mod-add-button {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+
+    background-color: color-mix(in srgb, var(--color-success) 70%, transparent);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    /*border: 2px solid var(--color-success-light);*/
+
+    border-style: solid;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.25);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.01),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.01),
+        inset 0 0 20px 10px rgba(255, 255, 255, 0.1);
+
+    filter: drop-shadow(0 0 5px #00000077);
+
+    font-family: Inter, sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 
+        background-color 200ms ease,
+        filter 300ms ease,
+        scale 200ms ease;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.mod-add-button:hover {
+    background-color: color-mix(in oklab, var(--color-success), white 5%);
+    filter: drop-shadow(0 0 10px #00000077);
+    scale: 1.05;
+}
+
+.mod-add-button:active {
+    background-color: color-mix(in oklab, var(--color-success), black 15%);
+}

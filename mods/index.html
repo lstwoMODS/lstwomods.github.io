@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Mods</title>
+
+    <include data-include="/html/head.html"></include>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script type="module" src="github_loader.js"></script>
+    <script type="module" src="semver_helper.js"></script>
+    <script type="module" src="script.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<include data-include="/html/header.html"></include>
+
+<main>
+
+    <div class="full-mods-ui-container">
+        <div id="game-selector-container">
+            <!--<div id="game-selector-dropdown"> <button id="game-selector-dropdown-toggle"></button> </div>
+            <ul id="game-selector-dropdown-menu">
+                <li data-value="A">Option A</li>
+                <li data-value="B">Option B</li>
+                <li data-value="C">Option C</li>
+            </ul>
+            <input type="hidden" id="game-selector-dropdown-value">
+            -->
+
+            <select name="game-selector-dropdown" id="game-selector-dropdown">
+            </select>
+        </div>
+
+        <div class="main-mods-container">
+            <div id="mods-download-panel" class="mods-ui-panel glassmorphism">
+                <h2>Download</h2>
+                <ul class="mods-download-list frutiger-aero glassmorphism" id="mods-download-list">
+                </ul>
+
+                <button class="download-button" id="download-button"> Download </button>
+            </div>
+
+            <div id="mods-list" class="mods-ui-panel glassmorphism">
+                <h2>Mod List</h2>
+
+                <ul class="mods-list" id="mods-list-ul">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <include data-include="/html/footer.html" style="width: 100%"></include>
+</main>
+
+<div class="popup-bg hidden" id="gh-rate-popup">
+    <div class="popup glassmorphism frutiger-aero" role="dialog" aria-modal="true" aria-labelledby="gh-popup-title">
+        <div style="position:relative;">
+            <span class="close-x" id="gh-popup-close"></span>
+            <h2 id="gh-popup-title">GitHub API rate limit reached</h2>
+        </div>
+
+        <p id="gh-popup-message">
+            GitHub's rate limit has been exceeded. To continue using this page either try again later, or sign into your GitHub account to avoid these limits.
+        </p>
+
+        <div class="actions">
+            <button class="primary glassmorphism" id="gh-auth-btn"> Log in with GitHub</button>
+        </div>
+
+        <p id="gh-popup-code">
+            Code: (code will show up once login button was pressed)
+        </p>
+    </div>
+</div>
+
+<div class="popup-bg hidden" id="downloading-popup">
+    <div class="popup glassmorphism frutiger-aero" role="dialog" aria-modal="true" style="max-width: 600px">
+        
+        <div style="position:relative; display:flex; justify-content: space-between; align-items: top;">
+            <div></div>
+            <h2>Download started</h2>
+            <button class="close-x"></button>
+        </div>
+
+        <ol>
+            <li>Go to the <a href="/mods/">Download Mods</a> page and add all the mods you want to install.</li> 
+            <li>Once you're done download the .zip file and extract it.</li>
+            <li>Open the game's folder and drag the .exe onto the 'DRAG GAME HERE.bat' file from the extracted modpack.</li>
+        </ol>
+        <p>Once the process is finished you can open the game again with the mods installed.</p>
+    </div>
+</div>
+
+<script>
+    alert("NOTE: This website is currently in beta. While it probably works there may be some bugs.");
+</script>
+
+</body>
+</html>
