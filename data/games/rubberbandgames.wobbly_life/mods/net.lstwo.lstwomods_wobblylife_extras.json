@@ -10,6 +10,9 @@
     "dependencies": [
         {
             "id": "net.lstwo.lstwomods_wobblylife"
+        },
+        {
+            "id": "dev.bepinex.wobbly_life_bepinex"
         }
     ]
 }

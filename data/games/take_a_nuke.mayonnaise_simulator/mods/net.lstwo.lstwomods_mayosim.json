@@ -10,6 +10,9 @@
     "dependencies": [
         {
             "id": "net.lstwo.lstwomods_core"
+        },
+        {
+            "id": "dev.bepinex.mayosim_bepinex"
         }
     ]
 }

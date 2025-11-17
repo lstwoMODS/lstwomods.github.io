@@ -1,0 +1,19 @@
+{
+    "name": "BepInEx",
+    "description": "Plugin loader for Unity games.",
+    "process_file": "ExtractToGameRoot",
+    "repo": {
+        "owner": "bepinex",
+        "name": "bepinex"
+    },
+    "tag_filters": {
+        "include": [
+            "5.x"
+        ]
+    },
+    "file_filters": {
+        "must_include": [
+            "x86"
+        ]
+    }
+}

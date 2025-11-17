@@ -7,5 +7,9 @@
         "name": "WobblyLife-XMAS"
     },
     "process_file": "MoveToPlugins",
-    "dependencies": []
+    "dependencies": [
+        {
+            "id": "dev.bepinex.wobbly_life_bepinex"
+        }
+    ]
 }

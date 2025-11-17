@@ -7,5 +7,9 @@
         "name": "WLFreakyCheesyMod"
     },
     "process_file": "ExtractToGameRoot",
-    "dependencies": []
+    "dependencies": [
+        {
+            "id": "dev.bepinex.wobbly_life_bepinex"
+        }
+    ]
 }

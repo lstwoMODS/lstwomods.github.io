@@ -220,35 +220,6 @@ function initGameSelectorDropdown(template, gameSelectorDropdown) {
 
     Object.values(data.games).filter(game => game.id !== "global").forEach(async game => {
         replaceAndInsertHtml(gameSelectorItem, gameSelectorDropdown, {"game_id": game.id, "game_name": game.game_name});
-
-        let mod = game.mod_loader;
-        mod.id = "mod_loader";
-        mod.name = "Mod Loader";
-
-        if (!mod.versions) {
-            let tags = await github_api.getReleaseTags(mod.repo.owner, mod.repo.name);
-
-            let versions = tags.map(tag => ({
-                original: tag,
-                normalized: tag.replace(/^v/i, "")
-            }));
-
-            if (mod.tag_filters) {
-                versions = semver_helper.applyTagFilters(
-                    versions.map(v => v.normalized),
-                    mod.tag_filters
-                ).map(n => versions.find(v => v.normalized === n));
-            }
-
-            if (mod.version_overrides) {
-                versions = semver_helper.applyVersionOverrides(
-                    versions.map(v => v.normalized),
-                    mod.version_overrides
-                ).map(n => versions.find(v => v.normalized === n));
-            }
-
-            mod.versions = versions.map(v => v.original);
-        }
     });
 
     let modsList = $('#mods-list-ul');
@@ -395,10 +366,6 @@ $(function() {
         const selectedGame = data.games[selectedGameId];
 
         const selectedMods = [];
-
-        const modLoader = selectedGame.mod_loader;
-        const modLoaderVersion = selectedGame.mod_loader.versions[0];
-        selectedMods.push({ mod: modLoader, version: modLoaderVersion });
 
         $('#mods-download-list li').each(function() {
             const modId = $(this).attr('value');

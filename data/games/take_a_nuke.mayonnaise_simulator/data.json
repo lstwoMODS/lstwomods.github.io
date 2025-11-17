@@ -1,21 +1,3 @@
 {
-    "game_name": "Mayonnaise Simulator",
-
-    "mod_loader": {
-        "process_file": "ExtractToGameRoot",
-        "repo": {
-            "owner": "bepinex",
-            "name": "bepinex"
-        },
-        "tag_filters": {
-            "include": [
-                "5.x"
-            ]
-        },
-        "file_filters": {
-            "must_include": [
-                "x86"
-            ]
-        }
-    }
+    "game_name": "Mayonnaise Simulator"
 }
