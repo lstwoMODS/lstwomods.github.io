@@ -37,6 +37,8 @@ export class GitHubAPI {
             clearInterval(poll);
             this.saveTokenToSession(tokenResp.access_token);
             this.hideRateLimitPopup();
+
+            window.location.reload();
             
         }, (interval + 0.5) * 1000);
     }
