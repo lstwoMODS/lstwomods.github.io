@@ -1,13 +1,13 @@
 // chatgpt generated example (im lazy)
 {
-    "name": "Some Cool Mod",
-    "description": "This is a description",
-    "author": "lstwo",
+    "name": "Some Cool Mod", // required
+    "description": "This is a description", // required
+    "author": "lstwo", // required
     "repo": {
-        "owner": "lstwo",
-        "name": "SomeModRepo"
+        "owner": "lstwo", // required
+        "name": "SomeModRepo" // required
     },
-    "process_file": "MoveToPlugins",    // batch file to install it
+    "process_file": "MoveToPlugins",  // required // batch file to install it
     // --------------------------------------------------------------------
     // GLOBAL COMPATIBILITY + FILTERS FOR ALL RELEASES
     // --------------------------------------------------------------------
