@@ -1,0 +1,11 @@
+{
+    "name": "WL Coordinates Mod",
+    "description": "Shows the coordinates of the player. Toggle with F6.",
+    "author": "lstwo",
+    "repo": {
+        "owner": "lstwo",
+        "name": "WLCoordinatesMod"
+    },
+    "process_file": "MoveToPlugins",
+    "dependencies": []
+}
