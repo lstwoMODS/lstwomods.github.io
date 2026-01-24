@@ -31,11 +31,17 @@
         <a class="download-mods-link-btn" href="/mods/">Download Mods</a>
         <p style="margin-top: 30px; font-size: medium;">Have a question? <a href="#section-faq">Check the FAQ</a></p>
     </div>
+    <epic_comic id="epic_comic"></epic_comic>
+    <script>
+if(Math.random() < 0.01) {
+    document.getElementById("epic_comic").innerHTML = `
 <center>
     <br>
     <img src="/imgs/misc/comice.png" width=300px>
     <br>
-</center>
+</center>`
+}
+    </script>
     <div class="main-content" id="section-how-to-install">
         <h1>How To Install</h1>
         <ol>
